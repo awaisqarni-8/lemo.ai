@@ -161,3 +161,61 @@ margin-top:8px;
 line-height:1.7;
 color:#ddd;
 }
+/* ---------- Hero ---------- */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 10%;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h1{
+font-size:55px;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero-text span{
+color:#4f8cff;
+}
+
+.hero-text p{
+font-size:18px;
+color:#d1d5db;
+margin-bottom:30px;
+}
+
+.hero-btn{
+display:inline-block;
+padding:15px 35px;
+background:#4f8cff;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+transition:.3s;
+}
+
+.hero-btn:hover{
+background:#2563eb;
+transform:translateY(-3px);
+}
+
+.hero-image{
+flex:1;
+text-align:center;
+}
+
+.hero-image img{
+width:100%;
+max-width:500px;
+border-radius:20px;
+box-shadow:0 0 30px rgba(79,140,255,.4);
+}
