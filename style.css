@@ -320,3 +320,23 @@ transition:all .6s ease;
     50%{transform:scale(1.1);}
     100%{transform:scale(1);}
 }
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(-45deg,#0b1120,#111827,#1e3a8a,#2563eb);
+    background-size:400% 400%;
+    animation:bgAnimation 12s ease infinite;
+    color:white;
+}
+
+@keyframes bgAnimation{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
