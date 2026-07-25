@@ -63,6 +63,10 @@ input.value = "";
 async function askAI() {
   const input = document.querySelector(".chat-box input");
   const question = input.value;
+await addDoc(collection(db, "chats"), {
+  message: question,
+  createdAt: serverTimestamp()
+});
 
   const response = await fetch("/api/chat", {
     method: "POST",
