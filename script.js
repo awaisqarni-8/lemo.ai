@@ -51,3 +51,25 @@ aiMessage.innerHTML = "🤖 You asked: " + text + "<br><br>AI feature is coming 
 input.value = "";
 
 });
+async function askAI() {
+  const input = document.querySelector(".chat-box input");
+  const question = input.value;
+
+  const response = await fetch("/api/chat", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      message: question
+    })
+  });
+
+  const data = await response.json();
+
+  const reply =
+    data.candidates?.[0]?.content?.parts?.[0]?.text ||
+    "Sorry, I couldn't answer.";
+
+  document.querySelector(".ai-message").innerText = reply;
+}
