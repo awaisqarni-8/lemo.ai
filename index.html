@@ -166,15 +166,19 @@ work smarter and save time.
 
 <h2>Contact Us</h2>
 <p>Email: <a href="mailto:lemoaiofficial@gmail.com">lemoaiofficial@gmail.com</a></p>
-<form>
+<form action="https://formsubmit.co/lemoaiofficial@gmail.com" method="POST">
 
-<input type="text" placeholder="Your Name">
+<input type="hidden" name="_captcha" value="false">
 
-<input type="email" placeholder="Email">
+<input type="hidden" name="_next" value="https://lemo-ai-eta.vercel.app">
 
-<textarea placeholder="Your Message"></textarea>
+<input type="text" name="name" placeholder="Your Name" required>
 
-<button>Send Message</button>
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
 
 </form>
 
