@@ -342,3 +342,22 @@ body{
         background-position:0% 50%;
     }
 }
+.signin-btn{
+color:white;
+text-decoration:none;
+margin-right:15px;
+font-weight:bold;
+}
+
+.signup-btn{
+background:#4f8cff;
+color:white;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.signup-btn:hover{
+background:#2563eb;
+}
