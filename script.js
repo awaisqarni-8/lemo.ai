@@ -56,6 +56,7 @@ if(text === ""){
 }
 
 aiMessage.innerHTML = "🤖 You asked: " + text + "<br><br>AI feature is coming soon!";
+askAI();
 
 input.value = "";
 
