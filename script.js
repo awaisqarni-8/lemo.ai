@@ -33,3 +33,21 @@ document.getElementById("loader").style.display="none";
 },1500);
 
 });
+const sendBtn = document.querySelector(".chat-box button");
+const input = document.querySelector(".chat-box input");
+const aiMessage = document.querySelector(".ai-message");
+
+sendBtn.addEventListener("click", () => {
+
+const text = input.value.trim();
+
+if(text === ""){
+    aiMessage.innerHTML = "⚠️ Please type a message.";
+    return;
+}
+
+aiMessage.innerHTML = "🤖 You asked: " + text + "<br><br>AI feature is coming soon!";
+
+input.value = "";
+
+});
