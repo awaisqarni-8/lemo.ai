@@ -1,4 +1,10 @@
 import { auth } from "./firebase.js";
+import { db } from "./firebase.js";
+import {
+  collection,
+  addDoc,
+  serverTimestamp
+} from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
 import { signOut } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
 document.querySelector("button").addEventListener("click", function () {
   alert("Welcome to Lemo.ai!");
