@@ -398,3 +398,36 @@ border-radius:10px;
 .chat-box button{
 width:100%;
 }
+.newsletter{
+padding:70px 10%;
+text-align:center;
+background:#111827;
+}
+
+.newsletter h2{
+font-size:36px;
+margin-bottom:15px;
+}
+
+.newsletter p{
+margin-bottom:25px;
+color:#ccc;
+}
+
+.newsletter input{
+width:70%;
+max-width:450px;
+padding:15px;
+border:none;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.newsletter button{
+padding:15px 30px;
+border:none;
+border-radius:10px;
+background:#4f8cff;
+color:white;
+cursor:pointer;
+}
