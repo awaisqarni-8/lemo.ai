@@ -82,3 +82,12 @@ logoutBtn.addEventListener("click", async () => {
     alert("Logged Out Successfully!");
     window.location.href = "login.html";
 });
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
+
+const userInfo = document.getElementById("userInfo");
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    userInfo.innerHTML = "👤 " + user.email;
+  }
+});
