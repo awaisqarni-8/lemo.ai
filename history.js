@@ -29,4 +29,10 @@ async function loadHistory() {
   });
 }
 
-loadHistory();
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    loadHistory(user);
+  } else {
+    historyList.innerHTML = "<p>Please login first.</p>";
+  }
+});
