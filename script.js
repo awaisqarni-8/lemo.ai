@@ -46,7 +46,7 @@ const sendBtn = document.querySelector(".chat-box button");
 const input = document.querySelector(".chat-box input");
 const aiMessage = document.querySelector(".ai-message");
 
-sendBtn.addEventListener("click",async() => {
+sendBtn.addEventListener("click", async () => {
 
 const text = input.value.trim();
 
