@@ -9,7 +9,7 @@ async function loadHistory(user) {
 
   const q = query(
   collection(db, "chats"),
-  where("uid", "==", auth.currentUser.uid),
+  where("uid", "==", auth.currentUser.uid), 
   orderBy("createdAt", "desc")
 );
   const snapshot = await getDocs(q);
