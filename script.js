@@ -84,9 +84,7 @@ console.log(JSON.stringify(data.candidates[0], null, 2));
 console.log("Status:", response.status);
 console.log("Response:", JSON.stringify(data));
 
-  const reply =
-    data.candidates?.[0]?.content?.parts?.[0]?.text ||
-    "Sorry, I couldn't answer.";
+  const reply = data.reply || "Sorry, I couldn't answer.";
 
   document.querySelector(".ai-message").innerText = reply;
 }
