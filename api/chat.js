@@ -30,7 +30,4 @@ console.log(JSON.stringify(data, null, 2));
   res.status(200).json({
   reply: data.candidates[0].content.parts[0].text
 });
-  apiKeyExists: !!API_KEY,
-  data
-});
 }
