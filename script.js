@@ -80,6 +80,7 @@ await addDoc(collection(db, "chats"), {
   });
 
   const data = await response.json();
+console.log(JSON.stringify(data.candidates[0], null, 2));
 console.log("Status:", response.status);
 console.log("Response:", JSON.stringify(data));
 
