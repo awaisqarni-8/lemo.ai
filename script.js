@@ -65,7 +65,10 @@ async function askAI() {
   const input = document.querySelector(".chat-box input");
   const question = input.value;
 await addDoc(collection(db, "chats"), {
+  uid: auth.currentUser.uid,
+  email: auth.currentUser.email,
   message: question,
+  reply: "",
   createdAt: serverTimestamp()
 });
 
