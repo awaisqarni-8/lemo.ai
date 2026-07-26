@@ -55,8 +55,8 @@ if(text === ""){
     return;
 }
 
-aiMessage.innerHTML = "🤖 You asked: " + text + "<br><br>AI feature is coming soon!";
-askAI();
+aiMessage.innerHTML = "🤖 Thinking...";
+await askAI();
 
 input.value = "";
 
