@@ -1,5 +1,5 @@
 import { auth, db } from "./firebase.js";
-import { collection, getDocs, query, orderBy } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
+import { collection, getDocs, query, orderBy, where } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
 
 const historyList = document.getElementById("historyList");
 
