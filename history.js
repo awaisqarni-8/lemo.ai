@@ -4,7 +4,7 @@ import { collection, getDocs, query, orderBy, where } from "https://www.gstatic.
 
 const historyList = document.getElementById("historyList");
 
-async function loadHistory() {
+async function loadHistory(user) {
   historyList.innerHTML = "";
 
   const q = query(
